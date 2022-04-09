@@ -39,6 +39,19 @@ let vectorStyles = {
     },
 }
 
+var legend = L.control({position: 'topright'});
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend');
+    div.innerHTML += '<i style="background: #018E42"></i> Grass<br>';
+    div.innerHTML += '<i style="background: #5D3A00"></i> Ground<br>';
+    div.innerHTML += '<i style="background: #F5CB5C"></i> Sand<br>';
+    div.innerHTML += '<i style="background: #BF1A2F"></i> Gravel<br>';
+    return div;
+};
+
+legend.addTo(map);
+
 
 let grass = L.vectorGrid.protobuf('/tiles/{z}/{x}/{y}.pbf', {
     vectorTileLayerStyles: vectorStyles,
