@@ -1,0 +1,4 @@
+*.geojson
+.idea
+venv
+public_html/tiles/
