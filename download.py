@@ -3,7 +3,7 @@ import os.path
 import geojson
 import overpass
 
-REGION = "3600088079"
+REGION = "West Yorkshire"
 
 SURFACES = {
     "grass": ["grass"],
@@ -17,7 +17,7 @@ def build_query(region, surfaces):
     surface_queries = ""
     for q in surfaces:
         surface_queries = surface_queries + "way[surface=%s](area.searchArea);>;" % q
-    base_query = "area(id:%s)->.searchArea;(%s);" % (region, surface_queries)
+    base_query = "area[name=\"%s\"]->.searchArea;(%s);" % (region, surface_queries)
     print(base_query)
     return base_query
 

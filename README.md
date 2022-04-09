@@ -12,7 +12,7 @@
 
 ## Development
 
-The area and types of surface we download are defined at the top of download.py. The current REGION is [West Yorkshire](https://www.openstreetmap.org/relation/88079). Each key in SURFACES becomes a separate geojson file, which becomes a separate vector_layer.
+The area and types of surface we download are defined at the top of download.py. The default `REGION` is [West Yorkshire](https://www.openstreetmap.org/relation/88079). Each key in `SURFACES` becomes a separate geojson file, which becomes a separate vector_layer.
 
 Each layer needs a style adding to `vectorStyles` in public_html/site.js
 
