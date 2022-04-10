@@ -3,7 +3,7 @@ import os.path
 import geojson
 import overpass
 
-REGION = "West Yorkshire"
+REGION = "England"
 
 SURFACES = {
     "grass": ["grass"],

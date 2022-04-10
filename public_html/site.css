@@ -1,7 +1,5 @@
-html, body, #map {
-    height: 99%;
-    width: 99vw;
-}
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
 .legend {
     line-height: 18px;
